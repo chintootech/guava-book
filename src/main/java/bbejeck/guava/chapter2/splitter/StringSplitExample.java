@@ -20,7 +20,7 @@ public class StringSplitExample {
         System.out.println(Arrays.toString(words)); // [Foo, , Bar, , Baz]
 
         // guava used
-        List<String> list = Splitter.on(",").omitEmptyStrings().splitToList(commaSeparatedString);
+        Iterable<String> list = Splitter.on(",").omitEmptyStrings().split(commaSeparatedString);
         System.out.println(list); // [Foo, Bar, Baz]
 
         //split string to a map
